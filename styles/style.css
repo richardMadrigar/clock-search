@@ -8,10 +8,12 @@ body {
   /* background-image: url(https://picsum.photos/1920/1080);  deixando assim n carrega toda vez*/
   font-family: sans-serif, monospace;
   color: white;
-
+ 
   width: 100vw;
   height: 100vh;  
   overflow: hidden;
+
+  background-size: cover; /* nao deixa duplicar img */
 }
 
 img{
@@ -22,7 +24,7 @@ img{
 
 
 #clockDisplay{
-  font-size: 9rem;
+  font-size: 8rem;
 
   position: absolute;
   top: 40%;
@@ -33,7 +35,7 @@ img{
 
 
 #welcome{
-  font-size: 3.3rem;
+  font-size: 3rem;
 
   position: absolute;
   top: 52%; 
@@ -79,10 +81,7 @@ img{
   }
 }
 
-@media (max-width: 500px) {  
-  img{
-    width: 70vh;
-  }
+@media (max-width: 500px) {   
   #clockDisplay {
     font-size: 4.5rem;
     font-weight: 600;
