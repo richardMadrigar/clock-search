@@ -14,12 +14,8 @@ body {
   overflow: hidden;
 
   background-size: cover; /* nao deixa duplicar img */
-}
-
-img{
-  width: 100vw;
-  height: 100vh;  
-  background-size: cover; 
+  background-position: center;  /* centralizar img  */
+  
 }
 
 
@@ -82,6 +78,10 @@ img{
 }
 
 @media (max-width: 500px) {   
+  body{
+    float: right;
+    background-position: center;
+  }
   #clockDisplay {
     font-size: 4.5rem;
     font-weight: 600;
