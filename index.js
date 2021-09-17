@@ -1,40 +1,36 @@
+(function showTime() {
+  const date = new Date(); //pegando data completa
 
-function showTime() {
-  var date = new Date(); //pegando data completa
+  this.hours = date.getHours();  //pegando horas
+  this.minutes = date.getMinutes(); //pegando minutos
 
-  var h = date.getHours();  //pegando horas
-  var m = date.getMinutes(); //pegando minutos
+  hours = (hours < 10) ? "0" + hours : hours; //passando um 0 antes do numero que ficar com um digito
+  minutes = (minutes < 10) ? "0" + minutes : minutes; //passando um 0 antes do numero que ficar com um digito
 
-
-  if (h == 0) {  //transformando 00:00 em 12:00
-    h = 12;
-  }
-
-  h = (h < 10) ? "0" + h : h; //passando um 0 antes do numero que ficar com um digito
-  m = (m < 10) ? "0" + m : m;
-
-  time = h + ":" + m  //criando sequencia de como vai ficar a data
+  time = hours + ":" + minutes  //criando sequencia da data
 
   document.getElementById("clockDisplay").innerHTML = time; //atribuindo ao html
 
-  setTimeout(showTime, 1000); //fazendo a funcao rodar a cada 1segundo
+  setTimeout(showTime, 1000); //fazendo a funcao rodar a cada 1s
+})();
+
+
+function wellcome() {
+  // regras do Bem vindo
+  if (hours > 05 && hours < 12) {
+    wellcome = "Good morning ❤"
+  } else if (hours > 11 && hours < 18) {
+    wellcome = "Good afternoon ❤"
+  } else {
+    wellcome = "Good evening ❤"
+  }
+
+  document.getElementById('welcome').innerHTML = wellcome
 }
-showTime();
+wellcome()
 
 
-
-var data1 = new Date();
-var h1 = data1.getHours();
-
-if (h1 > 05 && h1 < 12) {
-  wellcome = "Good Morning ❤"
-} else if (h1 > 11 && h1 < 18) {
-  wellcome = "Good afternoon ❤"
-} else {
-  wellcome = "Good evening ❤"
-}
-
-document.getElementById('welcome').innerHTML = wellcome
-
-
+//add IMG na DOM
+let wallpaper = document.getElementById("wallpaper");
+wallpaper.style = "background-image: url('https://picsum.photos/1920/1080')"
 

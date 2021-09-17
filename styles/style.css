@@ -5,17 +5,17 @@
 }
 
 body {
-  /* background-image: url(https://picsum.photos/1920/1080);  deixando assim n carrega toda vez*/
   font-family: sans-serif, monospace;
-  color: white;
- 
+  color: rgb(255, 255, 255);  
+}
+
+#wallpaper{
   width: 100vw;
   height: 100vh;  
-  overflow: hidden;
+  overflow: hidden;  
 
   background-size: cover; /* nao deixa duplicar img */
   background-position: center;  /* centralizar img  */
-  
 }
 
 
@@ -23,10 +23,12 @@ body {
   font-size: 8rem;
 
   position: absolute;
-  top: 40%;
+  top: 47%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);  
+
+  user-select: none;
 }
 
 
@@ -34,22 +36,24 @@ body {
   font-size: 3rem;
 
   position: absolute;
-  top: 52%; 
+  top: 57%; 
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+
+  user-select: none;
 }
 
 .content__search {
   position: absolute;
-  top: 65%; 
+  top: 70%; 
   left: 50%;
   transform: translate(-50%, -50%);
 
   height: 50px;
-
   width: 70%;
   max-width: 736px;
+
   padding: 8px 11px 8px 20px;
 
   font-size: 19px;
@@ -57,7 +61,7 @@ body {
   background: transparent;
 
   border-radius: 25px;
-  border: 2px solid #ffffff9e;
+  border: 2px solid #ffffffb0;
   outline: 0;  
 }
 .content__search:hover{
@@ -85,6 +89,6 @@ body {
     font-weight: 600;
   }
   #welcome{
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 } 
