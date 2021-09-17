@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(https://picsum.photos/1920/1080);
+  /* background-image: url(https://picsum.photos/1920/1080);  deixando assim n carrega toda vez*/
   font-family: sans-serif, monospace;
   color: white;
 

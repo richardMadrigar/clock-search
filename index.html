@@ -9,12 +9,15 @@
 
   <link rel="shortcut icon" href="./assets/favicon.ico">
   <title> Clock </title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script src="index.js" async></script> <!-- async para carregar o relogio quando der-->
 </head>
 
-<body >
+<body style="background-image: url('https://picsum.photos/1920/1080')">
 
-  <!-- <img src="https://picsum.photos/1920/1080" alt="Image Background" /> -->
+  <!-- <img src="https://picsum.photos/1920/1080" alt="Image Background" /> desse jeito n fica responsivo-->
 
   <div id="clockDisplay" onload="showTime()"></div>
 
@@ -23,8 +26,6 @@
   <form action="https://www.google.com/search?q=">
     <input class="content__search" name="q" type="text" autocomplete="off" placeholder="🔍Search ">
   </form>
-
-    <script src="index.js"></script>    
 
 </body>
 

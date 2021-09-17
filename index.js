@@ -27,14 +27,14 @@ var data1 = new Date();
 var h1 = data1.getHours();
 
 if (h1 > 05 && h1 < 12) {
-  a = "Good Morning ❤"
+  wellcome = "Good Morning ❤"
 } else if (h1 > 11 && h1 < 18) {
-  a = "Good afternoon ❤"
+  wellcome = "Good afternoon ❤"
 } else {
-  a = "Good evening ❤"
+  wellcome = "Good evening ❤"
 }
 
-document.getElementById('welcome').innerHTML = a
+document.getElementById('welcome').innerHTML = wellcome
 
 
 
