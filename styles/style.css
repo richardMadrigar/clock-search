@@ -58,11 +58,13 @@ body {
 
   border-radius: 25px;
   border: 2px solid #ffffff9e;
-  outline: 0;
-  
+  outline: 0;  
+}
+.content__search:hover{
+  box-shadow:  0 0 .3rem rgba(255, 255, 255, 0.898);
 }
 .content__search:focus {
-  box-shadow:  0 0 1rem rgba(255, 255, 255, 0.898);
+  box-shadow:  0 0 .8rem rgba(255, 255, 255, 0.898);
 }
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.548);
@@ -77,11 +79,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {   
-  body{
-    float: right;
-    background-position: center;
-  }
+@media (max-width: 500px) {     
   #clockDisplay {
     font-size: 4.5rem;
     font-weight: 600;
