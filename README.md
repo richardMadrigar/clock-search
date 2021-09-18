@@ -13,7 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O app O projeto é uma pagina inicial para o seu browser, cada vez que vc recarrega ele puxa uma imagem diferente da API. Ele muda a forma de apresentar Bom dia, tarde e noite, conforme o horário.
+O app é uma pagina inicial para o seu browser, cada vez que vc recarrega ele puxa uma imagem diferente da API. Ele muda a forma de apresentar Bom dia, tarde e noite, conforme o horário.
 
 ## 🔖 Layout
 
