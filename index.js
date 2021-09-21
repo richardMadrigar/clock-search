@@ -4,19 +4,20 @@
   this.hours = date.getHours();  //pegando horas
   this.minutes = date.getMinutes(); //pegando minutos
 
-  hours = (hours < 10) ? "0" + hours : hours; //passando um 0 antes do numero que ficar com um digito
-  minutes = (minutes < 10) ? "0" + minutes : minutes; //passando um 0 antes do numero que ficar com um digito
+  let hoursFormat = (hours < 10) ? "0" + hours : hours; //passando um 0 antes do numero que ficar com um digito
+  let minutesFormat = (minutes < 10) ? "0" + minutes : minutes; //passando um 0 antes do numero que ficar com um digito
 
-  time = hours + ":" + minutes  //criando sequencia da data
+  let timeFormat = hoursFormat + ":" + minutesFormat  //criando sequencia da data
 
-  document.getElementById("clockDisplay").innerHTML = time; //atribuindo ao html
+  document.getElementById("clockDisplay").innerHTML = timeFormat; //atribuindo ao html
 
   setTimeout(showTime, 1000); //fazendo a funcao rodar a cada 1s
+ 
 })();
 
 
 function wellcome() {
-  // regras do Bem vindo
+  // regras - Bem vindo
   if (hours > 05 && hours < 12) {
     wellcome = "Good morning ❤"
   } else if (hours > 11 && hours < 18) {
